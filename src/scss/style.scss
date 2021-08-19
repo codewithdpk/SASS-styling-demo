@@ -1,0 +1,9 @@
+@use "./variables" as variables;
+
+.btn-primary{
+  @include variables.primary-btn();
+}
+
+.btn-success{
+  @include variables.success-btn();
+}

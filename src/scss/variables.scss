@@ -1,0 +1,35 @@
+$primary-background :white;
+$secondary-background: gray;
+
+$color-white:white;
+$color-primary:#007bff;
+$color-secondary:#6c757d;
+$color-info:#17a2b8;
+$color-success: #28a745;
+$color-danger:#dc3545;
+$color-warning:#ffc107;
+$color-muted:#6c757d;
+$color-dark:#343a40;
+
+@mixin button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px;
+  cursor: pointer;
+}
+
+@mixin primary-btn {
+  @include button();
+  background: $color-primary;
+  color:$color-white;
+  
+}
+
+@mixin success-btn {
+  @include button();
+  background: $color-success;
+  color: $color-white
+}
